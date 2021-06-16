@@ -153,6 +153,15 @@
 }
 
 .garage-page__theWinner__text {
-  margin: 5px 0;
+  margin: 10px 0;
+}
+
+.garage-page__theWinner__btn {
+  font-family: 'Mate SC', serif;
+  font-size: 15px;
+  background-color: rgb(243, 192, 24);
+  border: 0;
+  outline: none;
+  cursor: pointer;
 }
 
