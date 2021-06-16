@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
+
+.garage-page__create__btn,
+.garage-page__clear__btn,
+.garage-page__update__btn{
+  width: 70px;
+  height: 20px;
+  background-color: rgb(243, 192, 24);
+  font-family: 'Mate SC', serif;
+  font-size: 15px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.garage-page__race-reset-generate__race,
+.garage-page__race-reset-generate__reset,
+.garage-page__race-reset-generate__generate{
+  background-color: rgb(243, 192, 24);
+  font-family: 'Mate SC', serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  border: 0;
+  cursor: pointer;
+}
+
+.garage-page__buttons {
+  margin: 10px 0;
+  padding: 10px 0;
+}
+
+.garage-page__update {
+  padding: 5px 0;
+}
+
+.car {
+  margin: 25px 0;
+}
+
+.car__buttons {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.car__engine-buttons {
+  display: flex;
+}
+
+.to-garage, 
+.to-winners{
+  width: 100px;
+  height: 30px;
+  background-color: rgb(243, 192, 24);
+  font-family: 'Mate SC', serif;
+  font-size: 13px;
+  text-transform: uppercase;
+  outline: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.car__buttons button,
+.car__engine-buttons button {
+  width: 100px;
+  font-family: 'Mate SC', serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  background-color: rgb(243, 192, 24);
+  border: 0;
+  outline: none;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.garage-page__garage__number-of-cars{
+  font-family: 'Mate SC', serif;
+  color:rgb(83, 62, 4);
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.car__engine-buttons button{
+  border-radius: 5px;
+}
+
+.car__buttons__brand {
+  font-family: 'Mate SC', serif;
+  color: rgb(243, 192, 24);
+  font-size: 20px;
+}
+
+.car__track {
+  width: 100%;
+  border-bottom: dashed rgb(83, 62, 4) 2px;
+}
+
+.car__car-image {
+  position: relative;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  transition: 0.3s;
+}
+
+.car__finish-flag {
+  width: 80px;
+  height: 50px;
+  background: url('./../assets/finish.png');
+  background-size: 80px 50px;
+  float: right;
+ 
+}
+
+.garage-page__pagination {
+  display:  flex;
+  align-items: center;
+}
+
+.garage-page__pagination__pageInfo {
+  margin: 0 20px;
+  font-family: 'Mate SC', serif;
+  font-size: 25px;
+  color: rgb(83, 62, 4);
+}
+
+.garage-page__theWinner {
+  font-family: 'Mate SC', serif;
+  font-size: 15px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -99;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.garage-page__theWinner__inner {
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-60%);
+  position: relative;
+  width: 360px;
+  background-color: #fff;
+  z-index: 100;
+  box-shadow: 0px 0px 10px rgb(243, 192, 24);
+  padding: 15px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.garage-page__theWinner__text {
+  margin: 5px 0;
+}
+
