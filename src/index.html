@@ -1,13 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Race</title>
-  </head>
-  <body>
-  </body>
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <title>English for kids</title>
+  <link
+    rel="stylesheet"
+    href="<%=htmlWebpackPlugin.files.chunks.main.css %>"
+  />
+  <link rel="shortcut icon" href="../src/assets/images/logo.png" type="image/x-icon">
+</head>
+<body>
+<div class="container">
+  <header class="header">
+    <div class="menu">
+      <div class="open_menu_button"></div>
+      <nav class="menu_nav">
+        <div class="close_menu_button"></div>
+        <div class="menu_logo"></div>
+      </nav>
+      <div class="menu_overlay"></div>
+    </div>
+    <div class="buttons">
+      <div class="play_button"></div>
+      <div class="toggleButton">
+        <div class="train_button active">TRAIN</div>
+        <div class="game_button ">GAME</div>
+      </div>
+    </div>
+  </header>
+  <section class="main">
+  </section>
+</div>
+<footer class="footer">
+  <div class="footer_item">Created by <a href="https://github.com/uzuzer567">Lera Stasko</a> for 
+    <a href="https://rs.school/">The Rolling Scopes School</a> in 2021.
+  </div>
+</footer>
+<script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+</body>
 </html>
-
-
