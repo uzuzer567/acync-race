@@ -1,0 +1,116 @@
+.card {
+  width: 300px;
+  height: 155px;
+  border: 3px solid black;
+  border-radius: 10px;
+  position: relative;
+  transition: transform 0.8s;
+  -webkit-animation: flip_360 0.5s linear reverse both;
+  animation: flip_360 0.5s linear reverse both;
+  margin-top: 18.5px;
+}
+
+.disabled_card {
+  pointer-events: none;
+  cursor: none;
+  filter: grayscale(100%);
+}
+
+.card_rotated {
+  -webkit-animation: flip_180 0.5s linear both;
+  animation: flip_180 0.5s linear both;
+}
+
+.card_front {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Bowlby One', cursive;
+  font-size: 30px;
+  letter-spacing: 3px;
+  -webkit-text-stroke: 1.7px black;
+  color: rgb(255, 226, 65);
+  text-align: center;
+  height: 100%;
+  padding-top: 5px;
+}
+
+.card_back {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Bowlby One', cursive;
+  font-size: 30px;
+  letter-spacing: 3px;
+  -webkit-text-stroke: 1.7px black;
+  color: rgb(255, 226, 65);
+  text-align: center;
+  height: 100%;
+}
+
+.card_hidden {
+  display: none;
+}
+
+.card_info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 30%;
+  height: 30%;
+}
+
+.card_image {
+  width: 100%;
+  height: 70%;
+}
+
+.card_image_item {
+  width: 100px;
+  height: 100px;
+  background-size: contain;
+}
+
+.card_flip_button_icon {
+  width: 30px;
+  height: 30px;
+  top: 10px;
+  left: 10px;
+  position: fixed;
+}
+
+.card_flip_button_icon:hover {
+  transform: rotate(360deg);
+  transition: all 1s;
+}
+
+@keyframes flip_180 {
+  0% {
+    -webkit-transform: scale(1) rotate3d(1, 1, 0, 0deg);
+    transform: scale(1) rotate3d(1, 1, 0, 0deg);
+  }
+  50% {
+    -webkit-transform: scale(2.5) rotate3d(1, 1, 0, 90deg);
+    transform: scale(2.5) rotate3d(1, 1, 0, 90deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotate3d(1, 1, 0, 180deg);
+    transform: scale(1) rotate3d(1, 1, 0, 360deg);
+  }
+}
+
+
+@keyframes flip_360 {
+  0% {
+    -webkit-transform: scale(1) rotate3d(1, 1, 0, 0deg);
+    transform: scale(1) rotate3d(1, 1, 0, 0deg);
+  }
+  50% {
+    -webkit-transform: scale(2.5) rotate3d(1, 1, 0, 90deg);
+    transform: scale(2.5) rotate3d(1, 1, 0, 90deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotate3d(1, 1, 0, 180deg);
+    transform: scale(1) rotate3d(1, 1, 0, 180deg);
+  }
+}

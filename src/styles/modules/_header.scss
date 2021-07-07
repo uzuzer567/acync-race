@@ -1,0 +1,69 @@
+.header {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 90px;
+  border-radius: 10px;
+  border: 3px solid black;
+  background-color: white;
+}
+
+.play_button {
+  width: 40px;
+  height: 40px;
+  background-size: contain;
+  background-position: center;
+  background-image: url("../assets/images/play.png");
+  margin-right: 20px;
+  cursor: pointer;
+  pointer-events: none;
+}
+
+.toggleButton {
+  display: flex;
+  border-radius: 10px;
+  background-color: rgb(255, 226, 65);
+  font-family: 'Bowlby One', cursive;
+  font-size: 37px;
+  color: white;
+  -webkit-text-stroke: 1.7px black;
+  cursor: pointer;
+}
+
+.train_button {
+  border: 3px solid black;
+  border-radius: 10px 0 0 10px;
+  padding: 8px;
+}
+
+.game_button {
+  border: 3px solid black;
+  border-radius: 0 10px 10px 0;
+  padding: 8px;
+  margin-left: -2px;
+}
+
+.play_button:hover
+.train_button:hover,
+.game_button:hover {
+  filter: brightness(0.9);
+}
+
+.active {
+  background-color: #FFA90B;
+  transition: background 0.5s;
+}
+
+.active:hover {
+  filter: brightness(1);
+}

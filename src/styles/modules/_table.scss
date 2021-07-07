@@ -1,0 +1,80 @@
+.statistic {
+  display: wrap;
+}
+
+.sort_by_category_button,
+.sort_by_word_button,
+.sort_by_translation_button,
+.sort_by_word_button,
+.sort_by_correct_button,
+.sort_by_errors_button, 
+.sort_by_percentage_button {
+  display: flex;
+  width: 160px;
+  height: 80px;
+  border-radius: 10px;
+  background-color: #FFA90B;
+  font-family: 'Bowlby One', cursive;
+  font-size: 17px;
+  color: white;
+  text-transform: uppercase;
+  -webkit-text-stroke: 1.7px black;
+  border: 3px solid black;
+  padding: 10px;
+  cursor: pointer;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.reset_button,
+.repeat_button {
+  display: flex;
+  width: 200px;
+  height: 90px;
+  border-radius: 10px;
+  background-color: #FFA90B;
+  font-family: 'Bowlby One', cursive;
+  font-size: 20px;
+  color: white;
+  text-transform: uppercase;
+  -webkit-text-stroke: 1.7px black;
+  border: 3px solid black;
+  padding: 10px;
+  cursor: pointer;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.sort_by_category_button:hover,
+.sort_by_word_button:hover,
+.sort_by_translation_button:hover,
+.sort_by_word_button:hover,
+.sort_by_correct_button:hover,
+.sort_by_errors_button:hover, 
+.sort_by_percentage_button:hover,
+.reset_button:hover,
+.repeat_button:hover {
+  filter: brightness(0.9);
+}
+
+.table {
+  display: block;
+  overflow-x: scroll;
+}
+
+.table_item {
+  border: 2px solid black;
+  font-family: 'Bowlby One', cursive;
+  font-size: 20px;
+  color: white;
+  letter-spacing: 2px;
+  -webkit-text-stroke: 0.8px black;
+  padding: 10px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.table_header_item {
+  color: #FFA90B;
+}
