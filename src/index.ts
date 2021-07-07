@@ -1,16 +1,10 @@
-import createHeader from './pages/header/createHeader';
-import './style/index.css';
-import createGaragePage from './pages/garage/createGaragePage';
-import pagesSwither from './commands/pagesSwitcher';
-import createWinnersPage from './pages/garage/score/createWinnersPage';
-import createPagesBlocks from './pages/garage/createPagesBlocks';
-
-const init = (): void => {
-  createHeader();
-  createPagesBlocks();
-  createGaragePage();
-  createWinnersPage();
-  pagesSwither();
-};
-
-window.addEventListener('load', init);
+import "./styles/style.scss";
+import "./scipts/cardsForStatistics";
+import "./scipts/state";
+import "./scipts/rotateCards";
+import "./scipts/burger";
+import "./scipts/category";
+import "./scipts/trainModeCards";
+import "./scipts/gameModeCards";
+import "./scipts/toogleModeButton";
+import "./scipts/statistics";
